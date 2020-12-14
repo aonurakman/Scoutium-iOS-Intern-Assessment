@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Opening Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OpeningScreenViewController" customModule="Scoutium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="cIR-BK-Usa">
+                                <rect key="frame" x="0.0" y="398" width="414" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0u6-o1-HLa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scoutiumDemo" translatesAutoresizingMaskIntoConstraints="NO" id="3VS-Qt-tbd">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="S1K-xu-ID6"/>
+                                    <constraint firstAttribute="height" constant="250" id="eX1-WV-V9G"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wtG-PN-Yot">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3984910102739726" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="bgColor"/>
+                        <constraints>
+                            <constraint firstItem="3VS-Qt-tbd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0q3-VU-264"/>
+                            <constraint firstItem="wtG-PN-Yot" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GTA-OG-ut1"/>
+                            <constraint firstItem="cIR-BK-Usa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K7h-IX-6u0"/>
+                            <constraint firstItem="3VS-Qt-tbd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wqm-zU-NSu"/>
+                            <constraint firstItem="cIR-BK-Usa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eDb-kA-JL7"/>
+                            <constraint firstItem="wtG-PN-Yot" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ihY-j6-s3W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cIR-BK-Usa" secondAttribute="trailing" id="kMt-AU-fj3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appLogoImageView" destination="3VS-Qt-tbd" id="flL-P9-dfP"/>
+                        <outlet property="connectionCheckIndicator" destination="wtG-PN-Yot" id="K2N-QX-QuD"/>
+                        <outlet property="textFromCloud" destination="cIR-BK-Usa" id="L5b-6d-8GU"/>
+                        <segue destination="Tj5-nn-fBq" kind="presentation" identifier="goToDisplayer" modalPresentationStyle="currentContext" id="8BA-kw-etA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="91.741071428571431"/>
+        </scene>
+        <!--Data Displayer View Controller-->
+        <scene sceneID="BKs-ps-dIF">
+            <objects>
+                <viewController storyboardIdentifier="dataDisplayer" id="Tj5-nn-fBq" customClass="DataDisplayerViewController" customModule="Scoutium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oAP-Ek-4VZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VLN-sR-DiA">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <color key="backgroundColor" name="transperentColor"/>
+                                <color key="tintColor" name="transperentColor"/>
+                                <color key="sectionIndexBackgroundColor" name="transperentColor"/>
+                            </tableView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" restorationIdentifier="loadingBG" translatesAutoresizingMaskIntoConstraints="NO" id="PxN-DZ-RLC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a1-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Qxa-pk-IHk">
+                                        <rect key="frame" x="169.5" y="410.5" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="LHh-Og-nhU"/>
+                                            <constraint firstAttribute="width" constant="75" id="Zoc-ql-uBq"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="bgColor"/>
+                                <constraints>
+                                    <constraint firstItem="Qxa-pk-IHk" firstAttribute="centerX" secondItem="PxN-DZ-RLC" secondAttribute="centerX" id="Jll-PY-0u3"/>
+                                    <constraint firstItem="Qxa-pk-IHk" firstAttribute="centerY" secondItem="PxN-DZ-RLC" secondAttribute="centerY" id="afs-Ip-jWz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sJi-4u-odM"/>
+                        <color key="backgroundColor" name="bgColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PxN-DZ-RLC" secondAttribute="bottom" id="Brg-eu-MUc"/>
+                            <constraint firstItem="PxN-DZ-RLC" firstAttribute="trailing" secondItem="sJi-4u-odM" secondAttribute="trailing" id="CWp-EC-k5h"/>
+                            <constraint firstItem="sJi-4u-odM" firstAttribute="bottom" secondItem="VLN-sR-DiA" secondAttribute="bottom" constant="20" id="Cw1-Ph-fFo"/>
+                            <constraint firstItem="PxN-DZ-RLC" firstAttribute="top" secondItem="oAP-Ek-4VZ" secondAttribute="top" id="Ojz-4D-T6T"/>
+                            <constraint firstItem="sJi-4u-odM" firstAttribute="trailing" secondItem="VLN-sR-DiA" secondAttribute="trailing" constant="20" id="Q84-Qc-r9Y"/>
+                            <constraint firstItem="PxN-DZ-RLC" firstAttribute="leading" secondItem="sJi-4u-odM" secondAttribute="leading" id="RoD-SL-kAg"/>
+                            <constraint firstItem="VLN-sR-DiA" firstAttribute="leading" secondItem="sJi-4u-odM" secondAttribute="leading" constant="20" id="kgY-x6-e4W"/>
+                            <constraint firstItem="VLN-sR-DiA" firstAttribute="top" secondItem="sJi-4u-odM" secondAttribute="top" constant="20" id="sj3-DB-vvB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HsA-yL-eyp"/>
+                    <connections>
+                        <outlet property="animationImage" destination="Qxa-pk-IHk" id="6Ke-91-0m2"/>
+                        <outlet property="displayerTableView" destination="VLN-sR-DiA" id="fii-ob-nq6"/>
+                        <outlet property="loadingAnimationBackground" destination="PxN-DZ-RLC" id="EYx-aB-4xD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEU-iV-th4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098.5507246376812" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a1-removebg-preview" width="125" height="125"/>
+        <image name="scoutiumDemo" width="125" height="125"/>
+        <namedColor name="bgColor">
+            <color red="0.046999998390674591" green="0.10999999940395355" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="transperentColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

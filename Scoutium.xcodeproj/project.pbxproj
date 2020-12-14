@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D00BD7D18AA3A87D5CDDCC0 /* Pods_Scoutium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333B5639BE043BE6E407AFC0 /* Pods_Scoutium.framework */; };
+		7F7B158B258500A8004CAD89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7B158A258500A8004CAD89 /* AppDelegate.swift */; };
+		7F7B158D258500A8004CAD89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7B158C258500A8004CAD89 /* SceneDelegate.swift */; };
+		7F7B158F258500A8004CAD89 /* OpeningScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7B158E258500A8004CAD89 /* OpeningScreenViewController.swift */; };
+		7F7B1592258500A8004CAD89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7B1590258500A8004CAD89 /* Main.storyboard */; };
+		7F7B1594258500AE004CAD89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7B1593258500AE004CAD89 /* Assets.xcassets */; };
+		7F7B1597258500AE004CAD89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7B1595258500AE004CAD89 /* LaunchScreen.storyboard */; };
+		7F7B15A1258517A5004CAD89 /* ConnectionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7B15A0258517A5004CAD89 /* ConnectionChecker.swift */; };
+		7FC4E2E025858953005ED679 /* DataDisplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2DF25858953005ED679 /* DataDisplayerViewController.swift */; };
+		7FC4E2F32586342D005ED679 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2F22586342D005ED679 /* NetworkingClient.swift */; };
+		7FC4E2F625863459005ED679 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2F525863459005ED679 /* AppManager.swift */; };
+		7FC4E2F92586608C005ED679 /* DataInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2F82586608B005ED679 /* DataInstance.swift */; };
+		7FC4E2FC25866200005ED679 /* JSONItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2FB25866200005ED679 /* JSONItems.swift */; };
+		7FC4E30B25867952005ED679 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4E30A25867952005ED679 /* GoogleService-Info.plist */; };
+		7FC4E31525867EB9005ED679 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E31325867EB9005ED679 /* CustomTableViewCell.swift */; };
+		7FC4E31B258680F5005ED679 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4E31A258680F5005ED679 /* CustomTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A52D0F186387BF5F5C29497 /* Pods-Scoutium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scoutium.debug.xcconfig"; path = "Target Support Files/Pods-Scoutium/Pods-Scoutium.debug.xcconfig"; sourceTree = "<group>"; };
+		333B5639BE043BE6E407AFC0 /* Pods_Scoutium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scoutium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7B1587258500A8004CAD89 /* Scoutium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoutium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7B158A258500A8004CAD89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F7B158C258500A8004CAD89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F7B158E258500A8004CAD89 /* OpeningScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningScreenViewController.swift; sourceTree = "<group>"; };
+		7F7B1591258500A8004CAD89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F7B1593258500AE004CAD89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F7B1596258500AE004CAD89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F7B1598258500AE004CAD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F7B15A0258517A5004CAD89 /* ConnectionChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionChecker.swift; sourceTree = "<group>"; };
+		7FC4E2DF25858953005ED679 /* DataDisplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDisplayerViewController.swift; sourceTree = "<group>"; };
+		7FC4E2F22586342D005ED679 /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		7FC4E2F525863459005ED679 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		7FC4E2F82586608B005ED679 /* DataInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInstance.swift; sourceTree = "<group>"; };
+		7FC4E2FB25866200005ED679 /* JSONItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONItems.swift; sourceTree = "<group>"; };
+		7FC4E30A25867952005ED679 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7FC4E31325867EB9005ED679 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		7FC4E31A258680F5005ED679 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		9516453FEA6F79B55BB05908 /* Pods-Scoutium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scoutium.release.xcconfig"; path = "Target Support Files/Pods-Scoutium/Pods-Scoutium.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F7B1584258500A8004CAD89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D00BD7D18AA3A87D5CDDCC0 /* Pods_Scoutium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		662665818255E7FD635BBC8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A52D0F186387BF5F5C29497 /* Pods-Scoutium.debug.xcconfig */,
+				9516453FEA6F79B55BB05908 /* Pods-Scoutium.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F7B157E258500A8004CAD89 = {
+			isa = PBXGroup;
+			children = (
+				7F7B1589258500A8004CAD89 /* Scoutium */,
+				7F7B1588258500A8004CAD89 /* Products */,
+				CB90E81663EADB193E0E5AA9 /* Frameworks */,
+				662665818255E7FD635BBC8E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7F7B1588258500A8004CAD89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F7B1587258500A8004CAD89 /* Scoutium.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F7B1589258500A8004CAD89 /* Scoutium */ = {
+			isa = PBXGroup;
+			children = (
+				7F7B158A258500A8004CAD89 /* AppDelegate.swift */,
+				7F7B158C258500A8004CAD89 /* SceneDelegate.swift */,
+				7FC4E2F525863459005ED679 /* AppManager.swift */,
+				7F7B15A0258517A5004CAD89 /* ConnectionChecker.swift */,
+				7FC4E2F22586342D005ED679 /* NetworkingClient.swift */,
+				7FC4E3052586779C005ED679 /* Model */,
+				7FC4E3042586776D005ED679 /* View */,
+				7FC4E30325867752005ED679 /* Controller */,
+				7F7B1593258500AE004CAD89 /* Assets.xcassets */,
+				7F7B1598258500AE004CAD89 /* Info.plist */,
+				7FC4E30A25867952005ED679 /* GoogleService-Info.plist */,
+			);
+			path = Scoutium;
+			sourceTree = "<group>";
+		};
+		7FC4E30325867752005ED679 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7F7B158E258500A8004CAD89 /* OpeningScreenViewController.swift */,
+				7FC4E2DF25858953005ED679 /* DataDisplayerViewController.swift */,
+				7FC4E31325867EB9005ED679 /* CustomTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7FC4E3042586776D005ED679 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F7B1590258500A8004CAD89 /* Main.storyboard */,
+				7FC4E31A258680F5005ED679 /* CustomTableViewCell.xib */,
+				7F7B1595258500AE004CAD89 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FC4E3052586779C005ED679 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FC4E2F82586608B005ED679 /* DataInstance.swift */,
+				7FC4E2FB25866200005ED679 /* JSONItems.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB90E81663EADB193E0E5AA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				333B5639BE043BE6E407AFC0 /* Pods_Scoutium.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F7B1586258500A8004CAD89 /* Scoutium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F7B159B258500AE004CAD89 /* Build configuration list for PBXNativeTarget "Scoutium" */;
+			buildPhases = (
+				99BE0EEEDFF4DF73E465E57D /* [CP] Check Pods Manifest.lock */,
+				7F7B1583258500A8004CAD89 /* Sources */,
+				7F7B1584258500A8004CAD89 /* Frameworks */,
+				7F7B1585258500A8004CAD89 /* Resources */,
+				0A8F85A861B2CA44563E2DAA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scoutium;
+			productName = Scoutium;
+			productReference = 7F7B1587258500A8004CAD89 /* Scoutium.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F7B157F258500A8004CAD89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					7F7B1586258500A8004CAD89 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 7F7B1582258500A8004CAD89 /* Build configuration list for PBXProject "Scoutium" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F7B157E258500A8004CAD89;
+			productRefGroup = 7F7B1588258500A8004CAD89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F7B1586258500A8004CAD89 /* Scoutium */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F7B1585258500A8004CAD89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7B1597258500AE004CAD89 /* LaunchScreen.storyboard in Resources */,
+				7FC4E30B25867952005ED679 /* GoogleService-Info.plist in Resources */,
+				7F7B1594258500AE004CAD89 /* Assets.xcassets in Resources */,
+				7FC4E31B258680F5005ED679 /* CustomTableViewCell.xib in Resources */,
+				7F7B1592258500A8004CAD89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A8F85A861B2CA44563E2DAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scoutium/Pods-Scoutium-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scoutium/Pods-Scoutium-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scoutium/Pods-Scoutium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99BE0EEEDFF4DF73E465E57D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scoutium-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F7B1583258500A8004CAD89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FC4E2F625863459005ED679 /* AppManager.swift in Sources */,
+				7F7B158F258500A8004CAD89 /* OpeningScreenViewController.swift in Sources */,
+				7FC4E2FC25866200005ED679 /* JSONItems.swift in Sources */,
+				7F7B158B258500A8004CAD89 /* AppDelegate.swift in Sources */,
+				7FC4E2F32586342D005ED679 /* NetworkingClient.swift in Sources */,
+				7FC4E2E025858953005ED679 /* DataDisplayerViewController.swift in Sources */,
+				7FC4E31525867EB9005ED679 /* CustomTableViewCell.swift in Sources */,
+				7F7B158D258500A8004CAD89 /* SceneDelegate.swift in Sources */,
+				7F7B15A1258517A5004CAD89 /* ConnectionChecker.swift in Sources */,
+				7FC4E2F92586608C005ED679 /* DataInstance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F7B1590258500A8004CAD89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F7B1591258500A8004CAD89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F7B1595258500AE004CAD89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F7B1596258500AE004CAD89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F7B1599258500AE004CAD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F7B159A258500AE004CAD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F7B159C258500AE004CAD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A52D0F186387BF5F5C29497 /* Pods-Scoutium.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7779DBHCY;
+				INFOPLIST_FILE = Scoutium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmet-onur-akman.ScoutiumAssessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F7B159D258500AE004CAD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9516453FEA6F79B55BB05908 /* Pods-Scoutium.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7779DBHCY;
+				INFOPLIST_FILE = Scoutium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmet-onur-akman.ScoutiumAssessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F7B1582258500A8004CAD89 /* Build configuration list for PBXProject "Scoutium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F7B1599258500AE004CAD89 /* Debug */,
+				7F7B159A258500AE004CAD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F7B159B258500AE004CAD89 /* Build configuration list for PBXNativeTarget "Scoutium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F7B159C258500AE004CAD89 /* Debug */,
+				7F7B159D258500AE004CAD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F7B157F258500A8004CAD89 /* Project object */;
+}
