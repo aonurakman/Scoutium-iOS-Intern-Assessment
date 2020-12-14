@@ -18,6 +18,8 @@ class OpeningScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         connectionCheckIndicator.startAnimating()
+        // Do not need to check connection in advance.
+        // This control is handled within the fetching process.
         setupRemoteConfigDefaults()
         fetchRemoteConfig() // Fetch data from cloud
     }
@@ -38,6 +40,8 @@ class OpeningScreenViewController: UIViewController {
         RemoteConfig.remoteConfig().fetch(completionHandler: { [unowned self] (status, error) in
             guard error == nil else {
                 print(DebugMessages.firebaseFetchError.rawValue, " \(error!)")
+                // Did we get this error because of the connection?
+                if !ConnectionChecker().isConnected() { hold() }
                 return
             }
             print(DebugMessages.firebaseFetchSuccess.rawValue)
@@ -49,18 +53,17 @@ class OpeningScreenViewController: UIViewController {
     // Display values from designated UI Elements
     // -------------------IMPORTANT--------------------------
     // This function is also designed to call necessary functions-
-    // -depending on the existence of the connection.
+    // -to proceed instead of returning after finishing its task.
     // This is usually not a great approach.
     // However, the assessment was specifically requiring a 3-
     // -seconds text display - whatever is the connection speed.
     func updateViewWitchFatchedValues(){
         textFromCloud.text = RemoteConfig.remoteConfig().configValue(forKey: RemoteConfigKeys.openingLabel.rawValue).stringValue ?? ""
-        // Normally, the following line could be located more properly.
-        // But in our case, text should not be displayed before fetching ends.
+        // Need to make sure if the connection is still there before proceeding.
         ConnectionChecker().isConnected() ? proceed() : hold()
     }
     
-    // A function to be called when the connection is there
+    // A function to be called to show text and proceed to the next view.
     func proceed(){
         stopLoadingAnimation()
         appLogoImageView.isHidden = true
